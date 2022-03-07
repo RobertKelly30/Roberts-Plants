@@ -1,11 +1,16 @@
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+
+import {LoginPage, DashBoardPage, PageNotFound} from './pages'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route index element={<LoginPage/>}/>
+        <Route path="dashboard" element={<DashBoardPage/>}/>
+        <Route path="*" element={<PageNotFound/>}/>
+      </Routes>
+    </>
   );
 }
 
