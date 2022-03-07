@@ -1,5 +1,7 @@
 import React from "react";
+
 import {Link} from 'react-router-dom'
+
 
 function DashBoardPage (props){
     return(
@@ -17,7 +19,6 @@ function DashBoardPage (props){
                     </li>
                 </ul>
             </nav>
-
         </>
     )
 }
