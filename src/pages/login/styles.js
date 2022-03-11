@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
 const LoginPageStyles = styled.section`
+  display: inline-block;
+  vertical-align: middle;
   margin: 4rem auto 0;
-  max-width: 480px;
+  margin-top: 0rem;
+  width: 50vh;
+
   h2 {
     text-align: center;
     font-size: 2rem;
@@ -11,23 +15,21 @@ const LoginPageStyles = styled.section`
     text-align: center;
     font-size: 1rem;
   }
-  .Toastify__toast {
-    background-color: #f53131;
-    color: white;
-  }
-  .Toastify__progress-bar--error {
-    background-color: #680101;
-  }
-  .Toastify__close-button {
-    color: white;
-    opacity: 1;
-  }
-  .Toastify__toast-icon {
-    fill: white;
-  }
 `;
 const FormControl = styled.div`
   margin: 1rem 0;
 `;
+const LoginPageContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 
-export { LoginPageStyles, FormControl };
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+`;
+
+export { LoginPageStyles, LoginPageContainer, FormControl };
