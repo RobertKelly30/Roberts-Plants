@@ -2,6 +2,8 @@ import React from "react";
 
 import {Link} from 'react-router-dom'
 
+import {AppBar} from './../../components/appbar'
+
 
 function DashBoardPage (props){
     return(
@@ -11,6 +13,9 @@ function DashBoardPage (props){
             </header>
             <nav>
                 <ul>
+                    <li>
+                        <AppBar />
+                    </li>
                     <li>
                         <Link to="/">Sign Out</Link>
                     </li>
