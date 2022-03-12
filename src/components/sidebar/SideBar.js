@@ -1,10 +1,22 @@
 import React from "react";
 
+import { MdDashboard } from "react-icons/md";
+
+import { SideBarStyles, SideBarHeader} from "./styles"
+import DashBoardOptions from "./DashBoardOptions"
+
 function SideBar (props){
     return(
-        <header>
-            <h1>SideBar</h1>
-        </header>
+        <SideBarStyles>
+
+            <SideBarHeader>
+                <MdDashboard size="1.75rem"/>
+                <h2>Dashboard</h2>
+            </SideBarHeader>
+
+            <DashBoardOptions/>
+
+        </SideBarStyles>
     )
 }
 

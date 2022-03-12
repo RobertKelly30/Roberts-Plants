@@ -1,1 +1,1 @@
-export { default as Panels } from "./AppBar"
+export { default as ProductListing } from "./ProductListing"

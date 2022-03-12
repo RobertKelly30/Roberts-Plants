@@ -7,7 +7,8 @@ function App() {
     <>
       <Routes>
         <Route index element={<LoginPage/>}/>
-        <Route path="dashboard" element={<DashBoardPage/>}/>
+        <Route path="dashboard" element={<DashBoardPage/>}>
+        </Route>
         <Route path="*" element={<PageNotFound/>}/>
       </Routes>
     </>

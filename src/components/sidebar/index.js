@@ -1,1 +1,1 @@
-export { default as SideBar } from "./AppBar"
+export { default as SideBar } from "./SideBar"
