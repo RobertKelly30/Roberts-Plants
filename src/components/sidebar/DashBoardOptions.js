@@ -1,8 +1,11 @@
- import React from 'react'
- import { Link } from 'react-router-dom';
- import styled from 'styled-components';
+import React from 'react'
 
- import { IoFlowerOutline, IoFileTrayStackedOutline, IoHeartCircleOutline, IoStarOutline, IoAddCircleOutline, IoClipboardOutline, IoExitOutline} from "react-icons/io5"
+import styled from 'styled-components';
+import { signOut } from 'firebase/auth'
+import { auth } from "libs/firebase"
+import { IoFlowerOutline, IoFileTrayStackedOutline, IoHeartCircleOutline, IoStarOutline, IoAddCircleOutline, IoClipboardOutline, IoExitOutline} from "react-icons/io5"
+
+import { Button } from "ui/buttons"
 
 const DashBoardOptionsStyles = styled.ul`
     margin: 3rem 0 0;
@@ -14,6 +17,12 @@ const DashBoardOptionsStyles = styled.ul`
 `;
 
  function DashBoardOptions  (props){
+
+    function onLogoutRequest (e){
+        signOut(auth)
+        console.log("hello")
+    }
+
      return( 
         <>
             <DashBoardOptionsStyles>
@@ -36,7 +45,7 @@ const DashBoardOptionsStyles = styled.ul`
                     <p><IoClipboardOutline/> Orders</p>
                 </li>
                 <li>
-                    <Link to="/"><IoExitOutline/> Sign Out</Link>
+                    <Button onClick={onLogoutRequest}><IoExitOutline/> Sign Out</Button>
                 </li>
             </DashBoardOptionsStyles>
         </>
