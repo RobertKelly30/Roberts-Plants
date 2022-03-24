@@ -1,1 +1,6 @@
-export { default as ProductListing } from "./ProductListing"
+export { default as AllPlantsPanel } from "./AllPlantsPanel"
+export { default as AddPlantPanel } from "./AddPlantPanel"
+export { default as CategoriesPanel } from "./CategoriesPanel"
+export { default as FavoritesPanel } from "./FavoritesPanel"
+export { default as OrdersPanel } from "./OrdersPanel"
+export { default as ReviewsPanel } from "./ReviewsPanel"

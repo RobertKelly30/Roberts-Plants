@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 const PanelStyles= styled.section`
-flex:1;
-box-shadow: 0 0 2px 0 rgba(0,0,0,0.3) ;
-background-color: white ;
-border-radius:3px ;
-margin:1.5rem;
+    flex:1;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.3) ;
+    background-color: white ;
+    border-radius:3px ;
+    margin:1.5rem;
 `;
 
 const PanelHeader = styled.header`
@@ -19,5 +19,8 @@ const PanelHeader = styled.header`
     }
 `;
 
+const PanelBody = styled.div`
+    margin: ${props => props.margin || " 4rem"}
+`
 
-export {PanelStyles, PanelHeader}
+export {PanelStyles, PanelHeader, PanelBody}
