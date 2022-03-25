@@ -11,7 +11,7 @@ function AppBar (props){
         <AppBarStyles>
             <AppBarItems>
                 <AppBarItem>
-                    <Brand size="1.5rem" iconSize="2rem" color="black" fill="#00a163"/>
+                    <Brand size="1.5rem" iconSize="2rem" color="black" fill="forestgreen"/>
                 </AppBarItem>
 
                 <AppBarItemGroup>

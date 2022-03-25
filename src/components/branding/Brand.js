@@ -7,7 +7,7 @@
         return( 
             <BrandStyles {...props}>
                 <GiFern size={props.iconSize} color={props.fill}/>
-                <figcaption>Robert's Plants</figcaption>
+                <figcaption> Robert's Plants</figcaption>
             </BrandStyles>
         )
     }

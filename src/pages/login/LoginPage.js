@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth"
 import { ToastContainer, toast } from "react-toastify";
+
+import { GiFern } from "react-icons/gi"
 import "react-toastify/dist/ReactToastify.css"
 
 import { auth } from "libs/firebase"
 import { Label, Input } from "ui/forms";
 import { SubmitButton } from "ui/buttons";
-import { LoginPageStyles, LoginPageContainer, FormControl } from "./styles";
+import { LoginPageStyles, LoginPageContainer, FormControl, LoginImageStyles } from "./styles";
 
 function LoginPage(props) {
     const [email, setEmail] = useState("")
@@ -40,11 +42,13 @@ function LoginPage(props) {
     return (
     <>
         <LoginPageContainer>
-            <ToastContainer />
-            <header>
-                <h1>Login Page</h1>
-            </header>
             <LoginPageStyles>
+                <ToastContainer />
+                <header>
+                    <h1>Welcome to Robert's Plants</h1>
+                    <p>Let's grow together</p>
+                </header>
+            
                 <form onSubmit={onHandleSubmit}>
                     <FormControl className="form-control">
                         <Label htmlFor="email">Email</Label>
@@ -68,10 +72,9 @@ function LoginPage(props) {
                     </FormControl>
                 </form>
             </LoginPageStyles>
-            <LoginPageStyles>
-                <h2>Welcome to Robert's Plants</h2>
-                <p>Let's grow together</p>
-            </LoginPageStyles>
+            <LoginImageStyles>
+                <GiFern size="50rem" color="white"/>
+            </LoginImageStyles>
         </LoginPageContainer>
     </>
   );

@@ -13,7 +13,7 @@ const Button = styled.button`
 `;
 
 const SubmitButton = styled(Button)`
-  background-color: ${(props) => props.bgcolor || "#00a163"};
+  background-color: ${(props) => props.bgcolor || "forestgreen"};
   color: ${(props) => props.color || "#f8fafc"};
   font-weight: ${(props) => props.fw || "700"};
   font-size: ${(props) => props.fs || "14px"};

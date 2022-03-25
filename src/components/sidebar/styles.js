@@ -5,6 +5,7 @@ const SideBarStyles = styled.aside`
    box-shadow: 2px 0 4px -2px grey;
    padding:3rem;
    background-color:#ffffff;
+   margin:1rem 0rem;
 `;
 
 const SideBarHeader = styled.header`
