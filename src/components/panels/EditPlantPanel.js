@@ -1,7 +1,7 @@
 import React from "react";
 import { PanelStyles, PanelHeader, PanelBody } from "./styles";
 
-function CategoriesPanel ({title, ...props}){
+function EditPlantPanel ({title, ...props}){
     return(
         <PanelStyles>
             <PanelHeader>
@@ -15,4 +15,4 @@ function CategoriesPanel ({title, ...props}){
     )
 }
 
-export default CategoriesPanel
+export default EditPlantPanel

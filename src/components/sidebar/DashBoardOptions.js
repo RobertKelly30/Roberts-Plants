@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import styled from 'styled-components';
 import { signOut } from 'firebase/auth'
 import { auth } from "libs/firebase"
-import { IoFlowerOutline, IoFileTrayStackedOutline, IoHeartCircleOutline, IoStarOutline, IoAddCircleOutline, IoClipboardOutline, IoExitOutline} from "react-icons/io5"
+import { IoFlowerOutline, IoPencil, IoHeartCircleOutline, IoStarOutline, IoAddCircleOutline, IoClipboardOutline, IoExitOutline} from "react-icons/io5"
 
 import { Button } from "ui/buttons"
 
@@ -32,10 +32,10 @@ function DashBoardOptions  (props){
                     <Link to="/dashboard"><IoFlowerOutline/> All Plants</Link>
                 </li>
                 <li>
-                    <Link to="addPlant"><IoAddCircleOutline/> Add Plant</Link>
+                    <Link to="add"><IoAddCircleOutline/> Add Plant</Link>
                 </li>
                 <li>
-                    <Link to="categories"><IoFileTrayStackedOutline/> Categories</Link>
+                    <Link to="edit"><IoPencil/> Edit Plant</Link>
                 </li>
                 <li>
                     <Link to="favorites"><IoHeartCircleOutline/> Favorites</Link>
