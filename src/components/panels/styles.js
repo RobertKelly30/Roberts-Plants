@@ -6,6 +6,7 @@ const PanelStyles= styled.section`
     background-color: white ;
     border-radius:3px ;
     margin:1rem;
+    
 `;
 
 const PanelHeader = styled.header`
@@ -20,7 +21,10 @@ const PanelHeader = styled.header`
 `;
 
 const PanelBody = styled.div`
-    margin: ${props => props.margin || " 4rem"}
+    margin: ${props => props.margin || " 4rem"};
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 `
 
 export {PanelStyles, PanelHeader, PanelBody}
